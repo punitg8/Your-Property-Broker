@@ -1,108 +1,190 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
-body{
-    background-position: center;
-    background-attachment: scroll;
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    height: 7vh;
+}
+.leftnav{
+    width: 50%;
+    padding-top: 1%;
+    left: 5%;
+    font-size: 125%;
+    
+}
+.leftnav>h2{
+    display: inline;
+}
+.rightnav{
+    position: fixed;
+    top: 3%;
+    width: 50%;
+    left: 60%;
+    display: inline;
+}
+.rightnav>a{
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+}
+.rightnav>a:hover{
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    padding: 1%;
 }
 header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Homepage.jpg);
-    background-size: cover;   /*image puri aye*/
-    background-position: center;   /*image centre mein aye*/
-    height: 100vh; /*Full vertical height*/
+    background-size: cover; 
+    background-position: center;   
+    height: 100vh;
+    position: relative;
 }
-.main{
+
+header>h1,header>p{
+    top:35.5vh;
+    margin: auto;
     color: white;
-    padding-top: 50%;
-    padding-left: 100%;
-    width: 3000px;
-    transform: translate(-50%,-50%);
     text-align: center;
+    padding-bottom: 2vh;
 }
-.main h1{
-    font-size: 100px;
-}
-nav{
-    z-index: 10;
-    position: fixed;
-    color: white;
-    height: 7vh;
-    width: 100%;
-    padding-top: 2vh;
-    background-color: black;
-}
-nav p{
-    display: inline;
-    position: relative;
-    padding-top: 2vh;
-    font-size: 150%;
-    padding-left: 2vh;
-}
-nav a{
-    position: relative;
-    left: 40%;
-    font-size: 150%;
+header a{
     text-decoration: none;
     color: white;
-    padding-right: 2vh;
+    padding-top: 10%;
 }
-.Typesofhouse{
+.button{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase;
+    top:35.5vh;
+    margin: auto;
     color: white;
+    text-align: center;
+    width: 30vh;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-weight: 300;
+}
+.Available{
+    height: 93vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Available li{
+    padding-left: 15vh;
+}
+.Available li,h3{
+    display: inline;
+}
+.Available h2{
+    text-align: center;
+    font-size: 300%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.Available img {
+    height: 25vh;
+    width: 25vh;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5px;
+}
+.row{
+    width: 100%;
+    padding-bottom: 10%;
+}
+.Available h3{
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    top:100%;
+    padding-left: 15vh;
+}
+.Available p{
+    font-size: 150%;
+    top:0;
+    z-index: 15;
+    color: brown;
+}
+.hometours{
     background-color: black;
+    color: white;
+    height: 95vh;
+    padding-left: 2% ;
+}
+.hometours h2{
+    font-size: 300%;
+    text-align: center;
+    padding: 3vh;
+}  
+.hometours video,h3,li{
+    display: inline;
+}
+.hometours video{
+    position:relative;
+    height: 75vh;
+    width: 98vh;
+    padding-right: 5%;
+}
+.hometours h3{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    font-size: 125%;
+}
+.hometours p,h1,h2,a{
+    top: 0;
+}
+.Contactus{
+    height: 100vh;
+    padding-top: 45px;
+    text-align: Center;
+    background-color: black;
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Team.jpg);
     background-size: cover;   /*image puri aye*/
     background-position: center;   /*image centre mein aye*/
-    height: 105vh; /*Full vertical height*/
+    height: 80vh; /*Full vertical height*/
 }
-.Typesofhouse h2{
-    text-transform: uppercase;
+.Contactus h2{
+    font-size: 350%;
+    padding-bottom: 40px;
+}
+.Contactus p,.Contactus ul>li{
+    padding: 23px;
+    font-size: 150%;
+}
+.Contactus ul>li{
+    padding-bottom: 5%;
+}
+.Contactus a{
     color: white;
-    font-size: 400%;
-    text-align: center;
-    padding: 2%;
-    padding-top: 3%;
-}
-
-.Typesofhouse li{
-    text-transform: uppercase;
-    font-size: 80%;
-    text-align: right;
-    list-style-type: none;
-    width: 25%;
-    float: left;
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 2%;
-}
-.Typesofhouse li>p{
-    padding-left: 0;
-    margin-left: 0;
-    width: 50vh;
-    padding-top: 0;
-    text-align: center;
-}
-.Typesofhouse li>video,li>img{
-    padding-left: 0;
-    margin-left: 0;
-    width: 30vh;
-    height: 30vh;
-    padding-top: 0;
-    text-align: center;
+    text-decoration: none;
 }
 .FeedBack{
-    background-color: #f2f2f2;
-    padding: 1%;
-}
-
-.Typesofhouse p{
-    clear: both;
-    position: relative;
-    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color:white;
 }
 .FeedBack h2{
     text-align: center;
-    font-size: 200%;
+    font-size: 300%;
 }
 .FeedBack label{
     padding-left: 0.5%;
@@ -116,30 +198,10 @@ nav a{
 .FeedBack input[type="submit"]{
     background-color: white;
     font-size: 125%;
-
 }
-.Contactus{
-    height: 100vh;
-    padding-top: 45px;
-    text-align: Center;
-    background-color: black;
-    color: white;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Team.jpg);
-    background-size: cover;   /*image puri aye*/
-    background-position: center;   /*image centre mein aye*/
-    height: 100vh; /*Full vertical height*/
-}
-.Contactus h2{
-    font-size: 350%;
-    padding-bottom: 40px;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-.Contactus p,ul>li{
-    padding: 23px;
-    font-size: 150%;
+.FeedBack input[type="submit"]:hover{
+    background-color:brown;
+    font-size: 125%;
 }
 .Aboutus{
     background-color: Black;
@@ -156,10 +218,3 @@ footer{
     color:white;
     text-align: center;
 }
-img,video{
-    height:200px;
-    width: 200px;
-    border-radius: 40px;
-    object-fit: fill;
-}
-
