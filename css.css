@@ -25,16 +25,28 @@ header{
     font-size: 100px;
 }
 nav{
-    color: white;
-    height: 4vh;
-    margin-top: 0.5cm;
+    z-index: 10;
     position: fixed;
-    left:55%
+    color: white;
+    height: 7vh;
+    width: 100%;
+    padding-top: 2vh;
+    background-color: black;
+}
+nav p{
+    display: inline;
+    position: relative;
+    padding-top: 2vh;
+    font-size: 150%;
+    padding-left: 2vh;
 }
 nav a{
+    position: relative;
+    left: 40%;
+    font-size: 150%;
     text-decoration: none;
     color: white;
-    padding: 0.75cm;
+    padding-right: 2vh;
 }
 .Typesofhouse{
     color: white;
