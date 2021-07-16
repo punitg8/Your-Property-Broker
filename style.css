@@ -220,7 +220,6 @@ padding: 10px 20px;
 @media only screen and (max-width: 980px) {
     .contact{
         padding:10%;
-        font-size: 110%;
     }
 }
 .links>li{
