@@ -173,7 +173,7 @@ padding: 10px 20px;
     background-image:linear-gradient(rgba(252, 10, 10, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Team.jpg);
     background-size: cover; 
     background-position: center; 
-    height: 95vh;
+    height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -218,7 +218,7 @@ padding: 10px 20px;
 @media only screen and (max-width: 600px) {
     .contact{
         padding:10%;
-        height: 130vh;
+        height: 130%;
     }
 }
 .links>li{
