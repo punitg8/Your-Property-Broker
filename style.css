@@ -74,16 +74,15 @@ header>h1{
 .button>a{
     color: white;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
     header{
         padding: 3%;
-        font-size: 120%;
     }
     .navi{
         flex-wrap: wrap;
     }
     .left{
-        flex: 1 1 1314px;
+        flex: 1 1 600px;
     }
     .right{
         flex: 1.75;
@@ -123,14 +122,13 @@ header>h1{
 text-align: center;
 padding: 10px 20px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .Available>ul>li>img {
-        height: 20vh;
+        height: 35vh;
         width: 100%
     }
     .Available>h2{
         margin: 6%;
-        font-size: 300%;
     }
     .Available{
         padding-bottom: 5%;
@@ -217,9 +215,10 @@ padding: 10px 20px;
     margin: 2%;
     text-align: center;
 }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 600px) {
     .contact{
         padding:10%;
+        height: 130vh;
     }
 }
 .links>li{
