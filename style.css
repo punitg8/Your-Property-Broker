@@ -5,287 +5,98 @@
     text-decoration: none;
     list-style-type: none;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+h1{
+    text-align: center;
 }
-.navi{
-    position: fixed;
-    width: 100%;
-    color: white;
-    background-color: black;
+.main{
     display: flex;
-    flex-direction: row;
-    z-index: 10;
+    justify-content: space-evenly;
 }
-.left{
+.box1,.box2,.box3{
     flex: 1;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: 125%;
-}
-.right>a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex: 1;
-    font-size: 110%;
-    color: white;
-}
-.right>a:hover{
-    background-color: white;
-    color: black;
-}
-.right{
-    flex: 1.75;
-    display: flex;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-left: auto;
-}
-header{
-    margin-top: auto;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Homepage.jpg);
-    background-size: cover; 
-    background-position: center;  
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-header>h1{
-    font-size: 300%;
-    padding-bottom: 2%;
-}
-.button{
-    margin:2%;
-    padding:1%;
-    text-transform: uppercase;
-    text-align: center;
     background-color: orange;
-    border-radius: 15px;
+    height: 1200px;
+    padding: 0.5em;
+    margin: 0.5em;
 }
-.button>a{
-    color: white;
+.box3{
+    padding: 0em;
 }
-@media only screen and (max-width: 600px) {
-    header{
-        padding: 3%;
-    }
-    .navi{
-        flex-wrap: wrap;
-    }
-    .left{
-        flex: 1 1 600px;
-    }
-    .right{
-        flex: 1.75;
-        display: flex;
-        flex-wrap: wrap;
-    }
+.rec,.square{
+    background-color: #00edff;
+    padding: 0.5em;
 }
-.Available{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.Available>h2{
-    margin: 2%;
-    font-size: 300%;
-}
-.Available>ul>li {
-    flex: 0 1 300px;
-    height: 25%;
-    margin: 1%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.Available>ul>li>img {
-    height: 30vh;
-    width: 100%
-}
-
-.Available>ul>li>h3 {
-text-align: center;
-padding: 10px 20px;
-}
-@media only screen and (max-width: 600px) {
-    .Available>ul>li>img {
-        height: 35vh;
-        width: 100%
-    }
-    .Available>h2{
-        margin: 6%;
-    }
-    .Available{
-        padding-bottom: 5%;
-    }
-}
-.hometours{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
-}
-.hometours>h2{
-    color: white;
-    margin: 2%;
-    font-size: 300%;
-}
-.hometours>ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.hometours>ul>li {
-    flex: 0 1 700px;
-    height: 25%;
-    margin: 1%;
-    background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 16, 247, 0.2), 0 6px 20px 0 rgba(5, 29, 243, 0.19);
-}
-
-.hometours>ul>li>video {
-    height: 60vh;
-    width: 100%
-}
-.hometours>ul>li>h3 {
-    color: white;
-    text-align: center;
+p{
     font-size: 110%;
 }
-.contact{
-    background-image:linear-gradient(rgba(252, 10, 10, 0.7),rgba(0, 0, 0, 0.7)),url(Images/Team.jpg);
-    background-size: cover; 
-    background-position: center; 
+.box1>.rec>p{
+    text-align: center;
+}
+.box1{
+    display: flex;
+    
+}
+.box2{
+    display:flex;
+    flex-direction: column;
+}
+.box3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1>.rec{
+    flex: 1;
     height: 100%;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.box2>.rec{
+    height: 50%;
+    width: 100%;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+.square{
+    flex: 1;
+}
+.square1{
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+.square2{
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+.square3{
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
+.square4{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+.up{
+    display: flex;
+    width: 100%;
+}
+.goto{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    padding: 0.5em;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
+    background-color: green;
 }
-.contact>h2{
-    color:white;
-    font-size: 300%;
-    padding: 2%;
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 15px;
-    margin-bottom: 0.5%;
-}
-.contact>p{
-    margin: 2%;
-    padding: 1%;
-    margin-bottom: 0.1%;
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 15px;
-}
-.contact>ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 60%;
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 15px;
-}
-.contact>ol{
-    padding: 1%;
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 15px;
-}
-.contact>ul>li{
-    flex: 1 1 175px;
-    width: 20%;
-    margin: 2%;
-    text-align: center;
-}
-@media only screen and (max-width: 600px) {
-    .contact{
-        padding:10%;
-        height: 80%;
+@media only screen and (max-width: 768px) {
+    .main{
+        display: block;
+    }
+    .box1{
+        flex-direction: column;
+    }
+    .box1>.rec{
+        height: 50%;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
     }
 }
-.links>li{
-    display: flex;
-    justify-content: center;
-}
-.links>li>a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-.links>li>a:hover{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 110%;
-}
-.FeedBack{
-    background-color: gradient(rgba(252, 10, 10, 0.7),rgba(0, 0, 0, 0.7));
-}
-.FeedBack{
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: black;
-    color:white;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.FeedBack>h2{
-    text-align: center;
-    font-size: 300%;
-    margin: 2%;
-}
-.FeedBack>form>label{
-    padding-left: 0.5%;
-}
-.FeedBack>form>input,.FeedBack>form>textarea{
-    margin: 0.25%;
-    padding: 1%;
-    width: 100%;
-    overflow: auto;
-}
-.FeedBack>form>input[type="submit"]{
-    background-color: white;
-    font-size: 125%;
-}
-.FeedBack>form>input[type="submit"]:hover{
-    background-color:brown;
-    font-size: 125%;
-}
-.Aboutus{
-    padding: 2%;
-    padding: 20px;
-    background-color:rgb(29, 29, 29);
-    color: white;
-}
-.Aboutus>h2{
-    text-align: center;
-    font-size: 300%;
-    padding-bottom: 20px;
-}
-footer{
-    padding: 20px;
-    background-color:rgb(29, 29, 29);
-    color:white;
-    text-align: center;
-}
-
-
