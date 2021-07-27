@@ -78,6 +78,7 @@ p{
 .up{
     display: flex;
     width: 100%;
+    lol:y;
 }
 .goto{
     position: fixed;
